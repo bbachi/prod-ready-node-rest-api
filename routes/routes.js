@@ -1,7 +1,9 @@
-var express = require("express"),
-    apiRouter = express();
+const express = require('express');
 
 
-apiRouter.use("/user", require('./user'));
+const apiRouter = express();
+
+
+apiRouter.use('/user', require('./user'));
 
 module.exports = apiRouter;

@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "start:dev": "nodemon index.js",
+    "eslint": "eslint ./",
+    "eslint-fix": "eslint ./ --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Bhargav Bachina",
@@ -15,6 +17,9 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
     "nodemon": "^1.18.10"
   }
 }
