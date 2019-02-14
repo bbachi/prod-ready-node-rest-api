@@ -9,6 +9,7 @@
     "eslint": "eslint ./",
     "eslint-fix": "eslint ./ --fix",
     "build": "webpack",
+    "prod": "node dist/api.bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Bhargav Bachina",
