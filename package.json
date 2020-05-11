@@ -4,7 +4,7 @@
   "description": "sample rest api",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "ENVIRONMENT=$ENVIRONMENT node index.js",
     "start:dev": "nodemon index.js",
     "eslint": "eslint ./",
     "eslint-fix": "eslint ./ --fix",
@@ -16,9 +16,11 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "dotenv": "^8.2.0",
     "express": "^4.16.4"
   },
   "devDependencies": {
+    "dotenv-webpack": "^1.8.0",
     "eslint": "^5.13.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
