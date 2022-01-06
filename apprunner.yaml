@@ -1,0 +1,13 @@
+version: 1.0
+runtime: nodejs12
+build:
+  commands:
+    pre-build:
+      - npm install
+    build:
+      - npm run build
+run:
+  runtime-version: 12.18.4
+  command: node dist/api.bundle.js
+  network:
+    port: 3070
