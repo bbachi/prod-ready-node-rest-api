@@ -11,3 +11,4 @@ run:
   command: npm run prod
   network:
     port: 3070
+    env: APP_PORT
