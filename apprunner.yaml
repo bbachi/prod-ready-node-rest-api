@@ -8,6 +8,6 @@ build:
       - npm run build
 run:
   runtime-version: 12.18.4
-  command: node dist/api.bundle.js
+  command: npm run prod
   network:
     port: 3070
